@@ -23,7 +23,7 @@ export class Pokemon {
         console.log(`${ this.name}, ${this.name}`);
         
     }
-
+         //agregando el tipo de dato a respuestas http
     async getMoves(): Promise<Move[]>{
         //const moves =10;
         const {data} = await axios.get<PokeapiResponse>('https://pokeapi.co/api/v2/pokemon/4');
@@ -35,7 +35,7 @@ export class Pokemon {
     
         
 }
-export const charmanderrr = new Pokemon( 4, 'Charmanderrrr')
+export const charmander = new Pokemon( 4, 'Charmanderrrr')
 // console.log(charmander.imageUrl);
 // charmander.scream();
 // charmander.speak();
@@ -44,4 +44,4 @@ export const charmanderrr = new Pokemon( 4, 'Charmanderrrr')
 //charmander.name = 'picachu'; SI SE PODRA PORQUE NO ESTÁ CONDICIONO
 
 // console.log(charmanderrr.getMoves());
-charmanderrr.getMoves();
+charmander.getMoves();
